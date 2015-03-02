@@ -35,6 +35,9 @@ class BeersController < ApplicationController
     @breweries = Brewery.all
   end
 
+  def list
+  end
+  
   # POST /beers
   # POST /beers.json
   def create

@@ -9,6 +9,8 @@ class BreweriesController < ApplicationController
     @active_breweries = Brewery.active
     @retired_breweries = Brewery.retired
 
+    @breweries = Brewery.all
+
     order = params[:order] || 'name'
 
     @active_breweries = case order
